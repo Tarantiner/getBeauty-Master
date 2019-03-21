@@ -13,9 +13,17 @@ RETRY_TIMES = 8
 RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 403, 404, 407, 408]
 
 ###################################################################################
+# distributed environment configuration
+SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
+DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
+SCHEDULER_PERSIST = False
+SCHEDULER_FLUSH_ON_START = True
+
+###################################################################################
 # db configurations
+REDIS_URL = 'redis://root:chen123@192.168.199.128:6379'
 MONGO_URI = 'localhost'
-MONGO_DATABASE = 'beauty'
+MONGO_DATABASE = 'beauty1'
 
 ###################################################################################
 # middleware and pipeline

@@ -25,7 +25,6 @@ class GetBeautySpider(scrapy.Spider):
             page_url = self.base_url + page_link
             yield scrapy.Request(page_url, callback=self.parse_urls)
 
-    @staticmethod
     def parse_detail(self, response):
         # parse each url in article
         item = GetbeautyItem()

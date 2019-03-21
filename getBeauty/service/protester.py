@@ -45,7 +45,7 @@ class ProxyHandler:
         """
         test_url = 'http://fun1shot.com/'
         headers = self.HEADERS
-        proxies = {'https': 'https://%s' % proxy}
+        proxies = {'http': 'http://%s' % proxy}
         try:
             res = requests.get(url=test_url, headers=headers, proxies=proxies, timeout=3)
             self.p_count += 1

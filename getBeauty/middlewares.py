@@ -46,6 +46,8 @@ class MyProxyMiddleWare(object):
         proxy_lis = self.get_proxy()
         proxy = 'http://' + random.choice(proxy_lis)
         request.meta['proxy'] = proxy
+        print('#'*100)
+        print(request.meta['proxy'])
         return None
 
 
