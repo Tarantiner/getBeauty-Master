@@ -21,7 +21,7 @@ SCHEDULER_FLUSH_ON_START = True
 
 ###################################################################################
 # db configurations
-REDIS_URL = 'redis://root:chen123@192.168.199.128:6379'
+REDIS_URL = 'redis://name:password@ip:port'
 MONGO_URI = 'localhost'
 MONGO_DATABASE = 'beauty1'
 
